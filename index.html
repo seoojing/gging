@@ -128,9 +128,9 @@ a2:hover{ color: white;
 	#poom21{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
 	#poom22{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
 
-	#yaa2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 43%;font-family: "DungGeunMo";cursor: pointer;}
+	#yaa2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 38%;font-family: "DungGeunMo";cursor: pointer;}
 	#yaa2:hover{color: white; }
-	#noo2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 55%;font-family: "DungGeunMo";cursor: pointer;}
+	#noo2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 50%;font-family: "DungGeunMo";cursor: pointer;}
 	#noo2:hover{color: white; }
 
 	#yaa3{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 35%;font-family: "DungGeunMo";cursor: pointer;}
@@ -1042,15 +1042,18 @@ a4 { font-weight:bold;
 
 
 	 <h6 id="flashlight">딱히 손전등을 사용할 곳이 없다.</h6>
-	 <h6 id="poom">몇 주전의 정전으로 아직 수리할게 남았다고 사용하지 못하고 있는 교실이다.</h6>
+	 <h6 id="poom">『혜윤』 이벤트를 확인할까요?</h6>
 	 <h6 id="poom2">아직 교실 자체에는 전기가 들어오지 않고 있다.</h6>
 	 <h6 id="poom3">문이 열려있는 것 같다. 안을 살펴볼까?</h6>	 
 	 <h6 id="poom4">안이 어두우니 조심하면서 살펴보도록 하자.</h6>	 
 	 <h6 id="poom5">들어가지 않기로 했다.</h6>	 
+<a href="https://seoojing.github.io/hee/">
+	 	 <h10 id="yaa2">▶ 예</h10>
+</a>
 
-	 	 <h10 id="yaa2">예</h10>
-		<h10 id="noo2">아니오</h10>
-
+<a href="https://seoojing.github.io/bom/">
+		<h10 id="noo2">▶ 아니오, 이미 했습니다.</h10>
+</a>
 <div id="musi">
    <a5>
 	<MARQUEE width="300" height="50" scrollamount="3">Op.25 No.11 'Winter Wind' - Chopin</MARQUEE>
@@ -1292,6 +1295,13 @@ window.onmousemove = function(){
 	if(aaPlay == 1){ walk.play(); 
 	}
 }
+	popol.onclick = function(){
+		but.play();
+		bx.style.display = "inline";
+		poom.style.display = "inline";
+		yaa2.style.display = "inline";
+		noo2.style.display = "inline";
+			}
 	content2_img.onclick = function(){
 		knock.play();
 			}
